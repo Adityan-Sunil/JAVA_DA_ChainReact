@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chain Reaction</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="window" id="login">
+    <div class="container">
+      <h3>Enter Username and Press Submit to Enter Game Room</h3>
+        <table id="usrTable">
+          <tr>
+            <td>Username</td>
+            <td><input type="text" name="username" id="username"></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button id="sbt" onclick="connect()">Submit</button></td>
+          </tr>
+        </table>
+    </div>
+  </div>
+  <div class="window hidden" id="game">
+    <div class="heading"><h1>Chain Reaction Online</h1></div>
+    <main>
+      
+    </main>
+    <div class="room-info">
+      <h3>Player List</h3>
+      <div id="players">
+      </div>
+    </div>
+  </div>
+  <div class="window hidden" id="gameOver">
+    <div class="container1">
+      <h2 id="winner"></h2>
+      <br><button id="reload" onclick="restart()">Restart Game</button>
+    </div>
+  </div>
+  <script src="conn.js"></script>
+  <!-- <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="like_button.js"></script> -->
+</body>
+</html>
